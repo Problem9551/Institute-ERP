@@ -80,8 +80,3 @@ VALUES
     (3000, 101, DATE_SUB(CURDATE(), INTERVAL 2 DAY), 1, FALSE, 1000), -- 2 days ago, Slot 1: S-Two Absent
     (2000, 101, DATE_SUB(CURDATE(), INTERVAL 1 DAY), 2, TRUE, 1000), -- 1 day ago, Slot 2: S-One Present
     (2000, 501, DATE_SUB(CURDATE(), INTERVAL 1 DAY), 3, TRUE, 5000); -- 1 day ago, Slot 3: S-One Present in Club
-
-select * from userx;
-select * from classx;
-select * from enrollment;
-select * from attendance;
