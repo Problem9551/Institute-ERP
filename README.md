@@ -46,6 +46,17 @@ The system currently supports:
 
 ---
 
+## 🖼️ Screenshots (16:9)
+
+<div align="center">
+  <img src="pic/img1.png" alt="Institute ERP Screenshot 1" width="49%" />
+  <img src="pic/img2.png" alt="Institute ERP Screenshot 2" width="49%" height="250px" />
+</div>
+
+<p align="center">
+  <sub><strong>Left:</strong> Main Dashboard View &nbsp;•&nbsp; <strong>Right:</strong> Attendance / Role Workflow View</sub>
+</p>
+
 ## 🧱 Project Structure
 
 ```text
@@ -60,6 +71,9 @@ Institute-ERP/
 │   ├── *.css             # Styling files
 │   ├── *.svg             # Vector assets
 │   └── *.png             # Image assets
+├── pic/                  # README screenshots (16:9)
+│   ├── img1.png
+│   └── img2.png
 └── README.md
 ```
 
@@ -172,7 +186,7 @@ node app.js
 Open in browser:
 
 ```text
-http://127.0.0.1:3206
+http://127.0.0.1:3000
 ```
 
 ---
